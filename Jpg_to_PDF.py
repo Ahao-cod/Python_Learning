@@ -1,6 +1,6 @@
 from PIL import Image
 
-def convert_jpg_to_pdf(image_path, output_path, quality=80):
+def convert_jpg_to_pdf(image_path, output_path, quality=75):
     image = Image.open(image_path)
     pdf_path = output_path + ".pdf"
     image.save(pdf_path, "PDF", quality = quality)
